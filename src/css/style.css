@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: white;
+    font-size: 20px;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(74, 74, 136);
+}
+
+input {
+    background: none;
+    outline: none;
+    border: none;
+    padding: 10px;
+  }
+
+input::placeholder{
+    color: rgb(206, 202, 202);
+}
+
+.content {
+    border: 2px solid;
+    padding: 20px;
+    width: 500px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.limit {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.limit .num-limit {
+    width: 100%;
+    margin-right: 10px;
+}
+
+.limit .num-limit input {
+    width: 100%;
+    border:none;
+}
+
+.display-number{
+    border-bottom: 2px solid;    
+    margin-bottom: 5px;
+}
+
+.limit .num-limit p,
+.num-drawn p ,
+p strong
+{
+    font-size: 10px;
+}
+
+.num-drawn p{
+    margin: 5px auto 0;
+    width: 300px;
+}
+
+.num-drawn {
+    padding: 10px;
+    text-align: center;
+}
+
+.num-drawn .display-number{
+    width: 200px;
+    margin: 0 auto;
+}
+
+.num-drawn .display-number input{
+    width: 100%;
+}
+
+.btn-draw {
+    display: block;
+    margin: 5px auto;
+    padding: 10px 15px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    color: black;
+    outline: none;
+    border: none;
+    background-color: rgb(233, 93, 93);
+    cursor: pointer;
+    width: 100%;
+}
+
+.result {
+    margin: 20px 0;
+    text-align: center;
+    width: 100%;
+    height: 300px;    
+    overflow-y: auto;
+    display: grid;
+    grid-template-columns: repeat(5,  1fr);
+    grid-template-rows: repeat(auto-fill, 50px);
+    padding: 10px 30px;
+}
+
+.result span{
+    padding: 5px;
+    background-color: white;
+    color: rgb(74, 74, 136);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
